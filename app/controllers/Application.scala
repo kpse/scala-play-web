@@ -26,7 +26,7 @@ object Application extends Controller {
       errors => BadRequest(views.html.tasks(Task.all(), errors)),
       label => {
         Task.create(label)
-        Redirect(routes.Application.tasks);
+        Redirect(routes.Application.tasks)
       }
     )
 
